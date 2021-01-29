@@ -1,0 +1,106 @@
+:root {
+    --main-bg-color: white;
+    --second-color: #69f;
+    --error-color:  #f96;
+    --black: black;
+    --white: #bacfff;
+}
+
+.wrapper{
+    height: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.notes{
+	display: flex;
+	justify-content: space-between;
+    overflow: auto;
+    width: 100%;
+    min-height: 610px;
+    height: 100%;
+}
+
+
+.notes_column{
+	display: flex;
+	flex-direction: column;
+    margin-right: 1%;
+}
+
+.card{
+	width: 90%;
+	background-color: var(--white);
+	margin-top: 10px;
+
+    /*font-size: 25px;*/
+    border: 3px solid white;
+    border-radius: 10px;
+    padding: 20px;
+
+    font-size: 18px;
+
+}
+
+.card:hover{
+    border-color: var(--second-color);;
+    background-color: var(--main-bg-color);
+}
+
+
+.card:hover>button{
+    border-color: var(--white);
+    background-color: var(--white);
+}
+
+button{
+/*	text-align: center;*/
+    margin-top: 15px;
+    border-radius: 15px;
+}
+
+.card:hover>button:hover{
+    border-color: var(--second-color);
+    background-color: var(--main-bg-color);
+}
+
+.chow_card{
+	margin-right: 5%;
+}
+
+.futter{
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+    font-size: 18px;
+
+}
+
+.date, .date1{
+    font-size: 14px;
+    text-align: right;
+    font-style: italic;
+}
+
+.futter>form{
+    margin-left: 10px;
+}
+
+.futter>form>button{
+    font-size: 18px;
+}
+
+button.show{
+    background-color: var(--white);
+    border-color: var(--white);
+}
+button.show:hover{
+    background-color: var(--main-bg-color);
+    border-color: var(--second-color);
+}
+.futter.links>.out{
+    margin-left: 50px;
+}

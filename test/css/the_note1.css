@@ -1,0 +1,40 @@
+:root {
+    --main-bg-color: #bacfff;;
+    --second-color: #69f;
+    --error-color:  #f96;
+    --black: black;
+    --white: white;
+}
+
+.wraper{
+	display: flex;
+	flex-direction: column;
+}
+
+.note, .buttons{
+	background: var(--white);
+	width: 95%;
+	padding: 2%;
+	margin: auto;
+}
+
+.note{
+	margin-top: 3%;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+.buttons{
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+button, a{
+	font-size: 18px;
+}
+
+button{
+	border-radius: 10px;
+	margin-right: 20px;
+	border-radius: 20px;
+}
